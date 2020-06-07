@@ -1,0 +1,13 @@
+@use "sass:color";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Playfair+Display&display=swap');
+
+//Fonts
+/* $font-family-sans-serif: 'Montserrat', sans-serif;
+$font-family-serif: 'Playfair Display', 'Times New Roman', serif;
+
+$font-family-base: $font-family-sans-serif !default; */
+
+$theatre-primary: #bf7463;
+$theatre-light: color.scale($theatre-primary, $lightness: 50%);
+$body-color: #454545;

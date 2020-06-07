@@ -1,0 +1,86 @@
+@tailwind base;
+
+h1 {
+    @apply text-5xl font-serif;
+  }
+h2 {
+    @apply text-3xl font-serif;
+  }
+h3 {
+    @apply text-2xl font-serif;
+  }
+a {
+    @apply text-gray-800;
+}
+a:hover {
+   @apply text-opacity-50;
+}
+
+.card {
+  @apply w-full px-2 mb-10;
+}
+
+.card-content {
+  @apply flex flex-col border rounded border-gray-200 p-10 shadow-lg transition-colors duration-500 ease-in-out;
+}
+
+.card-content:hover {
+  @apply bg-primary;
+}
+
+@screen md {
+  .card {
+    @apply w-1/3
+  }
+}
+
+.post-header {
+  @apply bg-fixed h-screen/400 bg-bottom flex flex-col items-center justify-center;
+}
+
+/* Do this instead: */
+.btn {
+  @apply block bg-red-500;
+}
+.btn:hover {
+  @apply bg-blue-500;
+}
+@screen md {
+  .btn {
+    @apply inline-block;
+  }
+}
+
+/* .card-content {
+  @apply md:flex flex-col border rounded border-gray-200 p-10 shadow-lg transition-colors duration-500 ease-in-out hover:bg-primary;
+} */
+
+@tailwind components;
+/**
+ * Import variables
+ */
+
+@import "variables";
+
+/**
+ * Import npm dependencies
+ * see: https://en.parceljs.org/module_resolution.html
+ * see commented examples below
+ */
+
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+
+/**
+ * Import layouts
+ * It's a best practice to use a partial for each page
+ */
+
+@import "layouts/general";
+
+/**
+ * Do NOT include anything else in this file!
+ */
+ @tailwind utilities;
